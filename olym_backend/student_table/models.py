@@ -7,7 +7,6 @@ from passlib.hash import pbkdf2_sha256
 
 class Student(AbstractUser):
     id=models.AutoField(primary_key=True)
-    name = models.CharField(null=False,max_length=100)
     ref_code = models.CharField(blank=True,max_length=20)
     parent_name = models.CharField(max_length=50)
     dob = models.DateField(null=True)
